@@ -233,6 +233,31 @@ body::before{
 .stat__lbl{ display:block; font-size:.76rem; letter-spacing:.14em; text-transform:uppercase; color:var(--cacao-soft); margin-top:.5rem; }
 
 /* ==========================================================================
+   SIGNATURES (bande photos plats, défilement horizontal)
+   ========================================================================== */
+.signatures{ background:var(--sand); padding:0 0 clamp(3.5rem,7vw,6rem); z-index:2; position:relative; }
+.signatures__track{
+  display:flex; gap:1rem; overflow-x:auto; scroll-snap-type:x mandatory;
+  padding:0 clamp(1.25rem,5vw,2.5rem) 1rem; scrollbar-width:none;
+  -webkit-overflow-scrolling:touch;
+}
+.signatures__track::-webkit-scrollbar{ display:none; }
+.sig{
+  position:relative; flex:0 0 auto; scroll-snap-align:start;
+  width:clamp(210px,42vw,300px); aspect-ratio:4/5; border-radius:18px; overflow:hidden;
+  box-shadow:0 20px 44px -28px rgba(46,36,24,.5);
+}
+.sig img{ width:100%; height:100%; object-fit:cover; transition:transform 1s var(--ease); }
+.sig:hover img{ transform:scale(1.06); }
+.sig figcaption{
+  position:absolute; inset:auto 0 0 0; padding:1.4rem 1.2rem .95rem;
+  display:flex; flex-direction:column; gap:.05rem;
+  background:linear-gradient(180deg, transparent, rgba(46,36,24,.82));
+}
+.sig__name{ font-family:var(--serif); font-weight:600; font-size:1.2rem; color:var(--shell); line-height:1.15; }
+.sig__cat{ font-size:.66rem; letter-spacing:.18em; text-transform:uppercase; color:var(--leaf-soft); }
+
+/* ==========================================================================
    MENU / CARTE
    ========================================================================== */
 .menu{ position:relative; background:var(--cream); padding:clamp(4rem,9vw,7rem) 0 clamp(3.5rem,7vw,5.5rem); z-index:2; }
@@ -346,6 +371,18 @@ body::before{
 .place__list li span{ font-family:var(--serif); font-weight:600; color:var(--terre); }
 
 /* ==========================================================================
+   BANDE IMMERSIVE (parallax)
+   ========================================================================== */
+.band{ position:relative; min-height:clamp(340px,52vh,520px); display:flex; align-items:center; justify-content:center; overflow:hidden; z-index:2; }
+.band__media{ position:absolute; inset:0; z-index:-1; }
+.band__media img{ width:100%; height:100%; object-fit:cover; object-position:center 60%; }
+@media (min-width:820px){ .band{ background-attachment:fixed; } .band__media img{ object-position:center 55%; } }
+.band__scrim{ position:absolute; inset:0; background:linear-gradient(180deg, rgba(46,36,24,.35), rgba(46,36,24,.55)); }
+.band__content{ position:relative; text-align:center; padding:2rem 1.5rem; color:var(--shell); }
+.band__script{ display:block; font-size:clamp(2rem,6vw,3.4rem); color:var(--shell); margin-bottom:.4rem; text-shadow:0 2px 24px rgba(46,36,24,.5); }
+.band__line{ font-size:.8rem; letter-spacing:.28em; text-transform:uppercase; color:rgba(251,247,239,.9); }
+
+/* ==========================================================================
    GALERIE
    ========================================================================== */
 .gallery{ background:var(--cream); padding:clamp(4rem,9vw,7rem) 0; z-index:2; position:relative; }
@@ -357,29 +394,22 @@ body::before{
   display:grid; grid-template-columns:repeat(2,1fr); gap:.9rem;
 }
 @media (min-width:760px){ .gallery__mosaic{ grid-template-columns:repeat(4,1fr); grid-auto-rows:200px; } }
-.gtile{ position:relative; border-radius:18px; overflow:hidden; min-height:200px; display:flex; align-items:flex-end; }
+.gtile{ position:relative; border-radius:18px; overflow:hidden; min-height:220px; }
 @media (min-width:760px){
   .gtile{ min-height:0; }
   .gtile--wide{ grid-column:span 2; grid-row:span 1; }
   .gtile--tall{ grid-row:span 2; }
 }
-.gtile--photo img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; transition:transform 1.1s var(--ease); }
-.gtile--photo:hover img{ transform:scale(1.06); }
-.gtile__inner{ position:relative; z-index:2; padding:1.2rem 1.3rem; }
-.gtile__inner .script{ font-size:1.4rem; margin-bottom:.05rem; }
-.gtile__word{ font-family:var(--serif); font-weight:600; font-size:1.35rem; color:var(--terre); line-height:1.1; }
-
-/* textured tiles */
-.gtile--rhum{ background:linear-gradient(145deg,var(--rhum),var(--rhum-deep)); }
-.gtile--rhum .script{ color:var(--leaf-soft); }
-.gtile--rhum .gtile__word{ color:var(--shell); }
-.gtile--sand{ background:linear-gradient(145deg,var(--cream-2),var(--leaf-soft)); }
-.gtile--cocktail{ background:linear-gradient(145deg,#C99B6B,#A9743F); }
-.gtile--cocktail .script{ color:#F4E7D3; }
-.gtile--cocktail .gtile__word{ color:var(--shell); }
-.gtile--glace{ background:linear-gradient(145deg,var(--shell),var(--cream-2)); }
-.gtile--leaf{ background:linear-gradient(160deg,var(--cream-2),var(--cream)); }
-.gtile--leaf svg{ position:absolute; top:-10%; right:-25%; width:80%; color:var(--leaf); opacity:.5; }
+.gtile img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; transition:transform 1.1s var(--ease); }
+.gtile:hover img{ transform:scale(1.06); }
+.gtile__cap{
+  position:absolute; inset:auto 0 0 0; z-index:2; padding:1.4rem 1.3rem .95rem;
+  background:linear-gradient(180deg, transparent, rgba(46,36,24,.7));
+  opacity:0; transform:translateY(8px); transition:opacity .4s var(--ease), transform .4s var(--ease);
+}
+.gtile:hover .gtile__cap, .gtile:focus-within .gtile__cap{ opacity:1; transform:translateY(0); }
+.gtile__cap .script{ font-size:1.5rem; color:var(--shell); }
+@media (hover:none){ .gtile__cap{ opacity:1; transform:none; } }
 .gallery__note{ text-align:center; margin-top:2rem; font-size:.95rem; color:var(--cacao-soft); }
 .gallery__note a{ color:var(--rhum); font-weight:500; border-bottom:1px solid var(--rhum); }
 

@@ -3,16 +3,78 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Le Manaïa · Restaurant de plage · Sainte-Anne, Guadeloupe</title>
-<meta name="description" content="Le Manaïa, restaurant de plage à Sainte-Anne en Guadeloupe. Brunch, tapas, cocktails, glaces et cave à rhums, les pieds dans le sable sur la plage de Sainte-Anne.">
-<meta property="og:title" content="Le Manaïa · Restaurant de plage">
-<meta property="og:description" content="Cuisine de plage, cocktails et cave à rhums à Sainte-Anne, Guadeloupe.">
-<meta property="og:type" content="restaurant">
+<title>Le Manaïa · Restaurant de plage à Sainte-Anne, Guadeloupe</title>
+<meta name="description" content="Le Manaïa, restaurant de plage sur la plage de Sainte-Anne en Guadeloupe. Brunch, tapas, cocktails, glaces et cave à rhums vieux, les pieds dans le sable. Ouvert tous les jours dès 8h.">
+<link rel="canonical" href="https://www.lemanaia.fr/">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#9A6A3C">
+
+<!-- Open Graph / réseaux sociaux -->
+<meta property="og:title" content="Le Manaïa · Restaurant de plage à Sainte-Anne">
+<meta property="og:description" content="Brunch, tapas, cocktails et cave à rhums, les pieds dans le sable sur la plage de Sainte-Anne, Guadeloupe.">
+<meta property="og:type" content="restaurant.restaurant">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://www.lemanaia.fr/">
+<meta property="og:image" content="https://www.lemanaia.fr/assets/terrasse-cocotiers.jpg">
+<meta property="og:image:alt" content="Terrasse du Manaïa sous les cocotiers face à la plage de Sainte-Anne">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Le Manaïa · Restaurant de plage à Sainte-Anne">
+<meta name="twitter:description" content="Brunch, tapas, cocktails et cave à rhums sur la plage de Sainte-Anne, Guadeloupe.">
+<meta name="twitter:image" content="https://www.lemanaia.fr/assets/terrasse-cocotiers.jpg">
+
 <link rel="icon" href="assets/logo.jpg">
+<link rel="apple-touch-icon" href="assets/logo.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Dancing+Script:wght@500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+
+<!-- Données structurées Google (Restaurant) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Le Manaïa",
+  "description": "Restaurant de plage à Sainte-Anne, Guadeloupe : brunch, tapas, cocktails, glaces et cave à rhums vieux.",
+  "servesCuisine": ["Brunch", "Caribéenne", "Cocktails", "Tapas"],
+  "priceRange": "20–30 €",
+  "image": "https://www.lemanaia.fr/assets/terrasse-cocotiers.jpg",
+  "url": "https://www.lemanaia.fr/",
+  "telephone": "+590590917796",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Plage communale",
+    "addressLocality": "Sainte-Anne",
+    "postalCode": "97180",
+    "addressRegion": "Guadeloupe",
+    "addressCountry": "GP"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 16.2260,
+    "longitude": -61.3830
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Sunday"],
+      "opens": "08:00",
+      "closes": "17:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Friday", "Saturday"],
+      "opens": "08:00",
+      "closes": "21:00"
+    }
+  ],
+  "sameAs": [
+    "https://www.instagram.com/lemanaia.fwi/",
+    "https://www.facebook.com/profile.php?id=61580376594863"
+  ],
+  "acceptsReservations": "True"
+}
+</script>
 </head>
 <body>
 
@@ -118,6 +180,47 @@
   </div>
 </section>
 
+<!-- ============ SIGNATURES (bande photos plats) ============ -->
+<section class="signatures" aria-label="Plats signatures du Manaïa">
+  <div class="signatures__track">
+    <figure class="sig">
+      <img src="assets/tacos-morning-vibes.jpg" alt="Tacos Morning Vibes, œuf brouillé et chorizo grillé au Manaïa" loading="lazy">
+      <figcaption>
+        <span class="sig__name">Tacos Morning Vibes</span>
+        <span class="sig__cat">Salés</span>
+      </figcaption>
+    </figure>
+    <figure class="sig">
+      <img src="assets/burrata-jambon-cru.jpg" alt="Burratina toast, burrata et jambon cru au Manaïa" loading="lazy">
+      <figcaption>
+        <span class="sig__name">Burrata &amp; jambon cru</span>
+        <span class="sig__cat">Salés</span>
+      </figcaption>
+    </figure>
+    <figure class="sig">
+      <img src="assets/frites-cheddar.jpg" alt="Frites de patate douce sauce cheddar, tapas du Manaïa" loading="lazy">
+      <figcaption>
+        <span class="sig__name">Frites patate douce</span>
+        <span class="sig__cat">Tapas</span>
+      </figcaption>
+    </figure>
+    <figure class="sig">
+      <img src="assets/cocktails-manaia.jpg" alt="Cocktail Disaronno Fizz et mojito au Manaïa" loading="lazy">
+      <figcaption>
+        <span class="sig__name">Cocktails maison</span>
+        <span class="sig__cat">Bar</span>
+      </figcaption>
+    </figure>
+    <figure class="sig">
+      <img src="assets/frites-patate-douce.jpg" alt="Frites de patate douce dorées servies avec un spritz" loading="lazy">
+      <figcaption>
+        <span class="sig__name">À l'apéro</span>
+        <span class="sig__cat">Tapas</span>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
 <!-- ============ CARTE ============ -->
 <section class="menu" id="carte">
   <div class="menu__header">
@@ -150,7 +253,7 @@
 <section class="place" id="lieu">
   <div class="place__grid">
     <div class="place__media">
-      <img src="assets/hero.webp" alt="Ambiance plage et mobilier en rotin au Manaïa">
+      <img src="assets/terrasse-tables-bois.jpg" alt="Tables en bois du Manaïa dressées sous les palmiers, restaurant de plage à Sainte-Anne" loading="lazy">
       <div class="place__badge">
         <span class="place__badge-num">97180</span>
         <span class="place__badge-lbl">Sainte-Anne</span>
@@ -171,6 +274,18 @@
   </div>
 </section>
 
+<!-- ============ BANDE IMMERSIVE ============ -->
+<section class="band" aria-label="Le Manaïa, plage de Sainte-Anne">
+  <div class="band__media">
+    <img src="assets/carte-plage-manaia.jpg" alt="Carte du Manaïa posée sur une table de la terrasse, face aux parasols de paille et à la mer" loading="lazy">
+    <div class="band__scrim"></div>
+  </div>
+  <div class="band__content">
+    <p class="script band__script">Sur la plage de Sainte-Anne</p>
+    <p class="band__line">Ouvert tous les jours dès 8h</p>
+  </div>
+</section>
+
 <!-- ============ GALERIE ============ -->
 <section class="gallery" id="galerie">
   <div class="gallery__header">
@@ -178,40 +293,29 @@
     <h2 class="gallery__head">L'esprit Manaïa</h2>
   </div>
   <div class="gallery__mosaic" id="galleryMosaic">
-    <!-- Single real photo used with intent; textured tiles carry the rest -->
-    <figure class="gtile gtile--wide gtile--photo">
-      <img src="assets/hero.webp" alt="Terrasse du Manaïa sous les cocotiers">
+    <figure class="gtile gtile--wide">
+      <img src="assets/terrasse-cocotiers.jpg" alt="Terrasse du Manaïa avec fauteuils en rotin sous les cocotiers face à la plage de Sainte-Anne" loading="lazy">
+      <figcaption class="gtile__cap"><span class="script">Les pieds dans le sable</span></figcaption>
     </figure>
-    <figure class="gtile gtile--rhum">
-      <div class="gtile__inner">
-        <p class="script">La cave à vieux</p>
-        <p class="gtile__word">Rhums de la Caraïbe</p>
-      </div>
+    <figure class="gtile">
+      <img src="assets/cocktails-manaia.jpg" alt="Cocktail Disaronno Fizz et mojito servis au bar du Manaïa" loading="lazy">
+      <figcaption class="gtile__cap"><span class="script">Cocktails</span></figcaption>
     </figure>
-    <figure class="gtile gtile--sand">
-      <div class="gtile__inner">
-        <p class="script">Les pieds dans</p>
-        <p class="gtile__word">le sable</p>
-      </div>
+    <figure class="gtile">
+      <img src="assets/tacos-morning-vibes.jpg" alt="Tacos Morning Vibes du Manaïa, œuf brouillé et chorizo grillé, dressés avec une fleur comestible" loading="lazy">
+      <figcaption class="gtile__cap"><span class="script">Cuisine solaire</span></figcaption>
     </figure>
-    <figure class="gtile gtile--tall gtile--leaf">
-      <svg viewBox="0 0 300 600" aria-hidden="true"><use href="#frond"/></svg>
-      <div class="gtile__inner">
-        <p class="script">Tapas &amp;</p>
-        <p class="gtile__word">partage</p>
-      </div>
+    <figure class="gtile gtile--tall">
+      <img src="assets/plage-sainte-anne.jpg" alt="Eau turquoise et sable blanc de la plage de Sainte-Anne, Guadeloupe" loading="lazy">
+      <figcaption class="gtile__cap"><span class="script">Le lagon</span></figcaption>
     </figure>
-    <figure class="gtile gtile--cocktail">
-      <div class="gtile__inner">
-        <p class="script">Cocktails</p>
-        <p class="gtile__word">au coucher du soleil</p>
-      </div>
+    <figure class="gtile">
+      <img src="assets/frites-cheddar.jpg" alt="Frites de patate douce sauce cheddar, tapas du Manaïa" loading="lazy">
+      <figcaption class="gtile__cap"><span class="script">Tapas à partager</span></figcaption>
     </figure>
-    <figure class="gtile gtile--glace">
-      <div class="gtile__inner">
-        <p class="script">Glaces &amp;</p>
-        <p class="gtile__word">milkshakes</p>
-      </div>
+    <figure class="gtile">
+      <img src="assets/burrata-jambon-cru.jpg" alt="Assiette de burrata et jambon cru accompagnée d'un spritz au Manaïa" loading="lazy">
+      <figcaption class="gtile__cap"><span class="script">À déguster</span></figcaption>
     </figure>
   </div>
   <p class="gallery__note">Suivez le quotidien du Manaïa sur <a href="https://www.instagram.com/lemanaia.fwi/" target="_blank" rel="noopener">@lemanaia.fwi</a></p>

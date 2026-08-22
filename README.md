@@ -52,10 +52,31 @@ s'affiche automatiquement. Le bouton "Ouvrir l'itinéraire" fonctionne partout.
 - Facebook : page du restaurant
 - Adresse : Plage communale, 97180 Sainte-Anne
 
-## Photos
+## Photos & SEO
 
-Pour l'instant le site utilise 1 seule photo d'ambiance (le hero) + le logo. Le reste de
-la galerie utilise des tuiles graphiques aux couleurs de la marque. Si tu m'envoies
-4 à 6 vraies photos (plats en gros plan, cocktails, la terrasse au coucher du soleil,
-une coupe de glace, l'ambiance du soir), je les intègre dans la galerie et ça passera
-un cap. Format idéal : paysage, bonne lumière.
+Le site utilise maintenant tes vraies photos, optimisées pour le web (compressées,
+redimensionnées) pour un chargement rapide, ce qui compte pour le référencement Google :
+
+- Hero : ambiance terrasse
+- Bande "plage de Sainte-Anne" : la carte posée sur la table face à la mer
+- Section "Le lieu" : tables en bois sous les palmiers
+- Bande "plats signatures" : tacos, burrata, frites patate douce, cocktails
+- Galerie : terrasse, cocktails, tacos, lagon, frites cheddar, burrata
+
+Le SEO en place (rien de bidon, que du factuel) :
+- Titre et description de page optimisés pour "restaurant plage Sainte-Anne Guadeloupe"
+- Données structurées Google (type Restaurant) : nom, adresse, téléphone, horaires,
+  fourchette de prix, cuisine, réseaux sociaux. C'est ce qui aide Google à afficher
+  la fiche riche (horaires, étoiles) dans les résultats.
+- Balises Open Graph : quand on partage le lien sur WhatsApp / Facebook / Insta,
+  l'aperçu affiche une belle photo + le bon texte.
+- Texte alternatif (alt) descriptif sur chaque photo (accessibilité + SEO images).
+
+IMPORTANT — avant la mise en ligne, remplace `https://www.lemanaia.fr/` par ta vraie
+adresse de site dans deux endroits du fichier `index.html` :
+1. les balises `<link rel="canonical">` et `og:url` / `og:image` en haut du fichier
+2. les champs `url` et `image` dans le bloc "Données structurées Google"
+Si tu ne le fais pas ce n'est pas grave, le site marche quand même, mais l'aperçu de
+partage et la fiche Google seront plus propres avec la bonne adresse.
+
+Tu peux m'envoyer d'autres photos quand tu veux, je les intègre.
