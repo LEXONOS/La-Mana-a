@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Le Manaïa · Restaurant de plage · Sainte-Anne, Guadeloupe</title>
+<meta name="description" content="Le Manaïa, restaurant de plage à Sainte-Anne en Guadeloupe. Brunch, tapas, cocktails, glaces et cave à rhums, les pieds dans le sable sur la plage de Sainte-Anne.">
+<meta property="og:title" content="Le Manaïa · Restaurant de plage">
+<meta property="og:description" content="Cuisine de plage, cocktails et cave à rhums à Sainte-Anne, Guadeloupe.">
+<meta property="og:type" content="restaurant">
+<link rel="icon" href="assets/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Dancing+Script:wght@500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="preloader__mark">
+    <span class="preloader__le">LE</span>
+    <span class="preloader__name">MANAÏA</span>
+    <span class="preloader__sub">Restaurant de plage</span>
+  </div>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#accueil" class="nav__brand" aria-label="Le Manaïa, accueil">
+      <span class="nav__brand-le">LE</span>
+      <span class="nav__brand-name">MANAÏA</span>
+    </a>
+    <nav class="nav__links" aria-label="Navigation principale">
+      <a href="#carte">La carte</a>
+      <a href="#lieu">Le lieu</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#infos">Infos &amp; contact</a>
+    </nav>
+    <a href="tel:+590590917796" class="nav__cta">Réserver</a>
+    <button class="nav__burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile drawer -->
+<div class="drawer" id="drawer" aria-hidden="true">
+  <nav class="drawer__links">
+    <a href="#carte">La carte</a>
+    <a href="#lieu">Le lieu</a>
+    <a href="#galerie">Galerie</a>
+    <a href="#infos">Infos &amp; contact</a>
+    <a href="tel:+590590917796" class="drawer__cta">Réserver au 05 90 91 77 96</a>
+  </nav>
+  <div class="drawer__social">
+    <a href="https://www.instagram.com/lemanaia.fwi/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.facebook.com/profile.php?id=61580376594863&locale=fr_FR" target="_blank" rel="noopener">Facebook</a>
+  </div>
+</div>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="accueil">
+  <div class="hero__media">
+    <img src="assets/hero.webp" alt="Terrasse en rotin du Manaïa sous les cocotiers, face à la plage de Sainte-Anne" fetchpriority="high">
+    <div class="hero__scrim"></div>
+  </div>
+
+  <!-- decorative fronds -->
+  <svg class="hero__frond hero__frond--l" viewBox="0 0 300 600" aria-hidden="true"><use href="#frond"/></svg>
+  <svg class="hero__frond hero__frond--r" viewBox="0 0 300 600" aria-hidden="true"><use href="#frond"/></svg>
+
+  <div class="hero__content">
+    <p class="hero__eyebrow">Sainte-Anne · Guadeloupe</p>
+    <h1 class="hero__title">
+      <span class="hero__le">Le</span>
+      <span class="hero__name">Manaïa</span>
+    </h1>
+    <p class="hero__tag">Restaurant&nbsp;de&nbsp;plage · les pieds dans le sable</p>
+    <p class="hero__desc">Brunch au soleil, tapas à partager, cocktails et rhums de la Caraïbe. Une cuisine généreuse et solaire, face au lagon.</p>
+    <div class="hero__actions">
+      <a href="#carte" class="btn btn--solid">Découvrir la carte</a>
+      <a href="tel:+590590917796" class="btn btn--ghost">Réserver une table</a>
+    </div>
+  </div>
+
+  <a href="#intro" class="hero__scroll" aria-label="Défiler vers le bas">
+    <span></span>
+  </a>
+</section>
+
+<!-- ============ INTRO / BANDEAU ============ -->
+<section class="intro" id="intro">
+  <div class="intro__leaf" aria-hidden="true">
+    <svg viewBox="0 0 300 600"><use href="#frond"/></svg>
+  </div>
+  <div class="intro__inner">
+    <p class="script intro__script">Bienvenue au Manaïa</p>
+    <h2 class="intro__head">Le goût des vacances,<br>servi à l'ombre des cocotiers.</h2>
+    <p class="intro__body">Sur la plage de Sainte-Anne, le Manaïa réunit le meilleur d'une journée en Guadeloupe&nbsp;: un brunch qui s'étire jusqu'en début d'après-midi, des assiettes créoles et méditerranéennes, une carte de cocktails travaillée et une véritable cave à rhums vieux. On s'installe dans le rotin et les coussins écrus, on écoute les vagues, et on prend son temps.</p>
+    <div class="intro__stats">
+      <div class="stat">
+        <span class="stat__num">8h–21h</span>
+        <span class="stat__lbl">Ven. &amp; sam.</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num">4,4<span class="stat__star">★</span></span>
+        <span class="stat__lbl">71 avis Google</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num">Plage</span>
+        <span class="stat__lbl">communale, Sainte-Anne</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CARTE ============ -->
+<section class="menu" id="carte">
+  <div class="menu__header">
+    <p class="menu__eyebrow">Restaurant Le Manaïa</p>
+    <h2 class="menu__title">La Carte</h2>
+    <div class="menu__rule" aria-hidden="true">
+      <svg viewBox="0 0 60 24"><use href="#sprig"/></svg>
+    </div>
+    <p class="menu__lead">Cuisine servie en continu. Prix en euros, taxes comprises. Une suggestion du jour est proposée à l'ardoise.</p>
+  </div>
+
+  <!-- Tabs -->
+  <div class="menu__tabs" id="menuTabs" role="tablist" aria-label="Catégories de la carte">
+    <button class="mtab is-active" role="tab" data-cat="sales" aria-selected="true">Salés &amp; Brunch</button>
+    <button class="mtab" role="tab" data-cat="sucres" aria-selected="false">Sucrés &amp; Gaufres</button>
+    <button class="mtab" role="tab" data-cat="glaces" aria-selected="false">Glaces</button>
+    <button class="mtab" role="tab" data-cat="cocktails" aria-selected="false">Cocktails</button>
+    <button class="mtab" role="tab" data-cat="boissons" aria-selected="false">Boissons</button>
+    <button class="mtab" role="tab" data-cat="vins" aria-selected="false">Vins &amp; Champagne</button>
+    <button class="mtab" role="tab" data-cat="spiritueux" aria-selected="false">Spiritueux &amp; Rhums</button>
+  </div>
+
+  <!-- Rendered panels -->
+  <div class="menu__stage" id="menuStage"></div>
+
+  <p class="menu__foot">Liste d'allergènes disponible sur demande. Abus d'alcool dangereux pour la santé, à consommer avec modération.</p>
+</section>
+
+<!-- ============ LE LIEU ============ -->
+<section class="place" id="lieu">
+  <div class="place__grid">
+    <div class="place__media">
+      <img src="assets/hero.webp" alt="Ambiance plage et mobilier en rotin au Manaïa">
+      <div class="place__badge">
+        <span class="place__badge-num">97180</span>
+        <span class="place__badge-lbl">Sainte-Anne</span>
+      </div>
+    </div>
+    <div class="place__text">
+      <p class="script place__script">Le lieu</p>
+      <h2 class="place__head">Un beach club à la guadeloupéenne</h2>
+      <p>Fauteuils tressés, parasols de paille et sable blanc&nbsp;: le Manaïa a été pensé comme une parenthèse. On y vient pour un café au réveil, un brunch entre amis, un déjeuner de tapas les orteils dans le sable, ou un cocktail au coucher du soleil le vendredi et le samedi soir.</p>
+      <ul class="place__list">
+        <li><span>Terrasse</span> face à la plage, à l'ombre des cocotiers</li>
+        <li><span>Brunch</span> et cuisine solaire servis en continu</li>
+        <li><span>Bar</span> à cocktails et cave à rhums vieux</li>
+        <li><span>Familles</span> bienvenues · mini-brunch enfant</li>
+      </ul>
+      <a href="#infos" class="btn btn--solid">Nous trouver</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALERIE ============ -->
+<section class="gallery" id="galerie">
+  <div class="gallery__header">
+    <p class="script gallery__script">En images</p>
+    <h2 class="gallery__head">L'esprit Manaïa</h2>
+  </div>
+  <div class="gallery__mosaic" id="galleryMosaic">
+    <!-- Single real photo used with intent; textured tiles carry the rest -->
+    <figure class="gtile gtile--wide gtile--photo">
+      <img src="assets/hero.webp" alt="Terrasse du Manaïa sous les cocotiers">
+    </figure>
+    <figure class="gtile gtile--rhum">
+      <div class="gtile__inner">
+        <p class="script">La cave à vieux</p>
+        <p class="gtile__word">Rhums de la Caraïbe</p>
+      </div>
+    </figure>
+    <figure class="gtile gtile--sand">
+      <div class="gtile__inner">
+        <p class="script">Les pieds dans</p>
+        <p class="gtile__word">le sable</p>
+      </div>
+    </figure>
+    <figure class="gtile gtile--tall gtile--leaf">
+      <svg viewBox="0 0 300 600" aria-hidden="true"><use href="#frond"/></svg>
+      <div class="gtile__inner">
+        <p class="script">Tapas &amp;</p>
+        <p class="gtile__word">partage</p>
+      </div>
+    </figure>
+    <figure class="gtile gtile--cocktail">
+      <div class="gtile__inner">
+        <p class="script">Cocktails</p>
+        <p class="gtile__word">au coucher du soleil</p>
+      </div>
+    </figure>
+    <figure class="gtile gtile--glace">
+      <div class="gtile__inner">
+        <p class="script">Glaces &amp;</p>
+        <p class="gtile__word">milkshakes</p>
+      </div>
+    </figure>
+  </div>
+  <p class="gallery__note">Suivez le quotidien du Manaïa sur <a href="https://www.instagram.com/lemanaia.fwi/" target="_blank" rel="noopener">@lemanaia.fwi</a></p>
+</section>
+
+<!-- ============ INFOS / CONTACT ============ -->
+<section class="infos" id="infos">
+  <div class="infos__leaf" aria-hidden="true"><svg viewBox="0 0 300 600"><use href="#frond"/></svg></div>
+  <div class="infos__header">
+    <p class="menu__eyebrow">Restaurant Le Manaïa</p>
+    <h2 class="infos__title">Infos &amp; Réservation</h2>
+    <div class="menu__rule" aria-hidden="true"><svg viewBox="0 0 60 24"><use href="#sprig"/></svg></div>
+  </div>
+
+  <div class="infos__grid">
+    <!-- Horaires -->
+    <div class="infocard infocard--hours">
+      <p class="script infocard__script">Horaires</p>
+      <ul class="hours">
+        <li><span class="hours__day">Lundi</span><span class="hours__dots" aria-hidden="true"></span><span class="hours__time">8h – 17h</span></li>
+        <li><span class="hours__day">Mardi</span><span class="hours__dots" aria-hidden="true"></span><span class="hours__time">8h – 17h</span></li>
+        <li><span class="hours__day">Mercredi</span><span class="hours__dots" aria-hidden="true"></span><span class="hours__time">8h – 17h</span></li>
+        <li><span class="hours__day">Jeudi</span><span class="hours__dots" aria-hidden="true"></span><span class="hours__time">8h – 17h</span></li>
+        <li class="is-late"><span class="hours__day">Vendredi</span><span class="hours__dots" aria-hidden="true"></span><span class="hours__time">8h – 21h</span></li>
+        <li class="is-late"><span class="hours__day">Samedi</span><span class="hours__dots" aria-hidden="true"></span><span class="hours__time">8h – 21h</span></li>
+        <li><span class="hours__day">Dimanche</span><span class="hours__dots" aria-hidden="true"></span><span class="hours__time">8h – 17h</span></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="infocard infocard--contact">
+      <p class="script infocard__script">Nous joindre</p>
+      <div class="contact">
+        <a class="contact__row" href="tel:+590590917796">
+          <span class="contact__label">Téléphone / Réservations</span>
+          <span class="contact__value">05 90 91 77 96</span>
+        </a>
+        <a class="contact__row" href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x8c134f7c0e155b59:0xf69556edb08bcab2" target="_blank" rel="noopener">
+          <span class="contact__label">Adresse</span>
+          <span class="contact__value">Plage communale, 97180 Sainte-Anne, Guadeloupe</span>
+        </a>
+        <div class="contact__row contact__row--static">
+          <span class="contact__label">Budget moyen</span>
+          <span class="contact__value">20 – 30 € · Restaurant</span>
+        </div>
+      </div>
+      <div class="contact__socials">
+        <a href="https://www.instagram.com/lemanaia.fwi/" target="_blank" rel="noopener" class="social">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=61580376594863&locale=fr_FR" target="_blank" rel="noopener" class="social">Facebook</a>
+        <a href="https://www.google.com/search?q=Le+Mana%C3%AFa+Sainte+Anne" target="_blank" rel="noopener" class="social">Google</a>
+      </div>
+    </div>
+
+    <!-- Map -->
+    <div class="infocard infocard--map">
+      <div class="mapframe">
+        <!-- styled fallback shown until / unless the embed loads -->
+        <div class="mapframe__fallback" aria-hidden="true">
+          <svg class="mapframe__leaf" viewBox="0 0 300 600"><use href="#frond"/></svg>
+          <div class="mapframe__pin">
+            <span class="mapframe__dot"></span>
+            <span class="mapframe__label">Le Manaïa</span>
+            <span class="mapframe__place">Plage de Sainte-Anne</span>
+          </div>
+        </div>
+        <iframe
+          title="Carte de localisation du Manaïa à Sainte-Anne"
+          src="https://www.google.com/maps?q=Plage%20communale%20Sainte-Anne%20Guadeloupe&output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <a class="infocard__maplink" href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x8c134f7c0e155b59:0xf69556edb08bcab2" target="_blank" rel="noopener">Ouvrir l'itinéraire →</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="foot">
+  <div class="foot__inner">
+    <div class="foot__brand">
+      <span class="foot__le">LE</span>
+      <span class="foot__name">MANAÏA</span>
+      <span class="foot__sub">Restaurant de plage</span>
+    </div>
+    <div class="foot__cols">
+      <div class="foot__col">
+        <p class="foot__h">Le restaurant</p>
+        <a href="#carte">La carte</a>
+        <a href="#lieu">Le lieu</a>
+        <a href="#galerie">Galerie</a>
+      </div>
+      <div class="foot__col">
+        <p class="foot__h">Contact</p>
+        <a href="tel:+590590917796">05 90 91 77 96</a>
+        <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x8c134f7c0e155b59:0xf69556edb08bcab2" target="_blank" rel="noopener">Plage de Sainte-Anne</a>
+      </div>
+      <div class="foot__col">
+        <p class="foot__h">Suivez-nous</p>
+        <a href="https://www.instagram.com/lemanaia.fwi/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=61580376594863&locale=fr_FR" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+  </div>
+  <div class="foot__bar">
+    <p>© <span id="year"></span> Le Manaïa · Sainte-Anne, Guadeloupe</p>
+    <p class="foot__legal">L'abus d'alcool est dangereux pour la santé. À consommer avec modération.</p>
+  </div>
+</footer>
+
+<!-- Back to top -->
+<a href="#accueil" class="totop" id="totop" aria-label="Retour en haut">↑</a>
+
+<!-- ============ SVG DEFS ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- Palm frond -->
+    <g id="frond">
+      <path d="M150 590 C150 590 150 300 150 40" stroke="currentColor" stroke-width="4" fill="none"/>
+      <g stroke="currentColor" stroke-width="3" fill="none" opacity="0.9">
+        <path d="M150 70 C110 60 70 70 40 110"/>
+        <path d="M150 110 C104 100 60 112 30 158"/>
+        <path d="M150 150 C100 142 54 156 26 206"/>
+        <path d="M150 195 C98 188 50 204 24 258"/>
+        <path d="M150 245 C98 240 48 258 24 314"/>
+        <path d="M150 300 C100 296 52 316 30 372"/>
+        <path d="M150 355 C104 352 58 374 38 428"/>
+        <path d="M150 410 C108 410 66 432 48 482"/>
+        <path d="M150 70 C190 60 230 70 260 110"/>
+        <path d="M150 110 C196 100 240 112 270 158"/>
+        <path d="M150 150 C200 142 246 156 274 206"/>
+        <path d="M150 195 C202 188 250 204 276 258"/>
+        <path d="M150 245 C202 240 252 258 276 314"/>
+        <path d="M150 300 C200 296 248 316 270 372"/>
+        <path d="M150 355 C196 352 242 374 262 428"/>
+        <path d="M150 410 C192 410 234 432 252 482"/>
+      </g>
+    </g>
+    <!-- Small sprig used as rule divider (echoes menu icons) -->
+    <g id="sprig">
+      <circle cx="30" cy="12" r="4.5" fill="currentColor"/>
+      <path d="M8 12 C16 6 22 6 26 12" stroke="currentColor" stroke-width="1.6" fill="none"/>
+      <path d="M52 12 C44 6 38 6 34 12" stroke="currentColor" stroke-width="1.6" fill="none"/>
+      <path d="M30 16 C30 20 30 22 30 24" stroke="currentColor" stroke-width="1.6" fill="none"/>
+    </g>
+  </defs>
+</svg>
+
+<script src="menu.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
