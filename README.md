@@ -52,6 +52,15 @@ s'affiche automatiquement. Le bouton "Ouvrir l'itinéraire" fonctionne partout.
 - Facebook : page du restaurant
 - Adresse : Plage communale, 97180 Sainte-Anne
 
+## Le nom "Manaïa"
+
+Dans la section "Le lieu", j'ai ajouté une phrase sur le sens du nom : dans la culture
+polynésienne (maorie), le manaïa est une créature gardienne, messager entre la terre et
+l'océan, symbole de protection. Ça donne du sens au nom pour un restaurant posé entre la
+plage et la mer. J'ai aussi repris un petit pictogramme d'oiseau (rappel du logo) comme
+motif discret dans cette section et dans le pied de page. Si l'origine du nom est en fait
+différente (un prénom, autre chose), dis-le moi et je corrige la phrase.
+
 ## Photos & SEO
 
 Le site utilise maintenant tes vraies photos, optimisées pour le web (compressées,
